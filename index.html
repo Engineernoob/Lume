@@ -61,15 +61,25 @@
           <form
             action="https://getform.io/f/aejeedrb"
             method="POST"
-            class="waitlist-form"
+            class="email-form"
             onsubmit="window.location.href='thankyou.html'; return false;"
           >
+            <!-- Email Input -->
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
               required
             />
+
+            <!-- Honeypot (anti-spam) -->
+            <input
+              type="hidden"
+              name="_gotcha"
+              style="display: none !important"
+            />
+
+            <!-- Submit Button -->
             <button type="submit">Join Waitlist</button>
           </form>
           <p>

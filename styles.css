@@ -78,36 +78,6 @@ header {
   margin-bottom: 2rem;
 }
 
-/* Trust Section */
-.trust {
-  padding: 3rem 0;
-  text-align: center;
-}
-
-.trust p {
-  color: #ccc;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.logos {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  opacity: 0.7;
-}
-
-.logos img {
-  height: 24px;
-  filter: brightness(0.8);
-  transition: filter 0.3s ease;
-}
-
-.logos img:hover {
-  filter: brightness(1.1);
-}
-
 /* Waitlist */
 .waitlist {
   padding: 5rem 0;
@@ -168,31 +138,6 @@ header {
 .waitlist p {
   color: #cecece;
   font-size: 0.95rem;
-}
-
-/* Thank You Page */
-.thank-you {
-  text-align: center;
-  padding: 6rem 0;
-  opacity: 0;
-  animation: fadeIn 0.8s ease-out forwards;
-  animation-delay: 0.3s;
-}
-
-.thank-you h1 {
-  font-size: 2.8rem;
-  background: linear-gradient(90deg, #4ade80, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 1rem;
-}
-
-.thank-you p {
-  font-size: 1.1rem;
-  color: #aaa;
-  max-width: 500px;
-  margin: 0 auto 2rem;
 }
 
 /* Footer */
