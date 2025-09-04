@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lume – Light up your next project</title>
+    <meta
+      name="description"
+      content="Build websites and apps in seconds. No code. No design. Just light."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="/" class="logo" aria-label="Lume – Light up your next project">
+          <svg width="100" height="32" xmlns="http://www.w3.org/2000/svg">
+            <title>Lume – Light up your next project</title>
+            <defs>
+              <filter id="glow">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="1.5"
+                  result="blur"
+                />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <text x="0" y="24" class="logo-lume" filter="url(#glow)">Lume</text>
+          </svg>
+        </a>
+        <a href="#waitlist" class="cta">Join Waitlist</a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <h1>Lume</h1>
+          <h2>Light up your next project.</h2>
+          <a href="#waitlist" class="cta">Get Early Access</a>
+        </section>
+
+        <section class="features">
+          <div class="feature">
+            <h3>Build Faster</h3>
+            <p>Create websites and apps with less code and faster.</p>
+          </div>
+          <div class="feature">
+            <h3>No Design Skills</h3>
+            <p>Design your site visually with no design skills required.</p>
+          </div>
+          <div class="feature">
+            <h3>Integrate Effortlessly</h3>
+            <p>Connect with your favorite apps and services without code.</p>
+          </div>
+        </section>
+
+        <!-- Waitlist Form -->
+        <section class="waitlist" id="waitlist">
+          <h2>Be first when we launch.</h2>
+          <form
+            class="email-form"
+            action="https://getform.io/f/aejeedrb"
+            method="POST"
+            onsubmit="window.location.href='thankyou.html'; return false;"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Join Waitlist</button>
+          </form>
+          <p>
+            We’ll email you when Lume is live. No spam. Unsubscribe anytime.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Made with 💡 for builders, creators & dreamers.</p>
+      </footer>
+    </div>
+  </body>
+</html>

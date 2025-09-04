@@ -1,0 +1,204 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #514f4f;
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header */
+header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Glow */
+.logo-lume {
+  fill: #4ade80;
+  font: 700 28px "Inter", sans-serif;
+}
+
+.logo:hover .logo-lume {
+  filter: drop-shadow(0 0 10px rgba(74, 222, 128, 0.6));
+}
+
+/* CTA Button */
+.cta {
+  display: inline-block;
+  background: linear-gradient(90deg, #4ade80, #60a5fa);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(74, 222, 128, 0.2);
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(74, 222, 128, 0.3);
+}
+
+/* Hero */
+.hero {
+  padding: 10rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #4ade80, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+/* Trust Section */
+.trust {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.trust p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  opacity: 0.7;
+}
+
+.logos img {
+  height: 24px;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+.logos img:hover {
+  filter: brightness(1.1);
+}
+
+/* Waitlist */
+.waitlist {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.waitlist h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(232, 232, 232);
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.email-form input {
+  padding: 1rem 1.5rem;
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #333;
+  background: #111;
+  color: white;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.email-form input:focus {
+  border-color: #60a5fa;
+}
+
+.email-form input::placeholder {
+  color: #777;
+}
+
+.email-form button {
+  padding: 1rem 2rem;
+  background: #4ade80;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.email-form button:hover {
+  background: #22c55e;
+}
+
+.waitlist p {
+  color: #cecece;
+  font-size: 0.95rem;
+}
+
+/* Thank You Page */
+.thank-you {
+  text-align: center;
+  padding: 6rem 0;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.thank-you h1 {
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, #4ade80, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.thank-you p {
+  font-size: 1.1rem;
+  color: #aaa;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 4rem 0 3rem;
+  color: #e3dede;
+  font-size: 0.9rem;
+}
